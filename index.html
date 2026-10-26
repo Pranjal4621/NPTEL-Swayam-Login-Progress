@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SWAYAM-NPTEL — Learning Portal Demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="e-learning-header">
+    <a class="swayam-brand" href="#" data-page="home"><img src="assets/swayam-logo.jpg" alt="SWAYAM logo"><span class="brand-nptel">◎ NPTEL</span></a>
+    <nav class="header-links">
+      <button data-page="course">About the course</button>
+      <button data-page="course">Announcements</button>
+      <button data-page="course">My Bookmarks</button>
+      <button data-page="course">Q&amp;A</button>
+      <button class="accessibility" aria-label="Accessibility">†</button>
+      <button class="profile" id="profileButton">PR</button>
+    </nav>
+    <div class="profile-menu hidden" id="profileMenu">
+      <strong>Demo Student</strong>
+      <button data-page="home">My Profile</button>
+      <button data-page="mycourses">My Courses</button>
+      <button data-page="report">My Progress</button>
+      <button id="closeProfile">Close menu</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="homePage" class="page">
+      <div class="home-top">
+        <div class="home-brandline">
+          <div><h1>Welcome to Swayam-NPTEL. Explore courses.</h1><p>Enhance skills that meet your need online</p></div>
+          <div class="institute-logos" aria-label="Participating institutes">
+            <span>🏛️</span><span>⚙️</span><span>🔴</span><span>🌐</span><span>◉</span><span>⚙</span><span>🏅</span><span>🔵</span>
+          </div>
+        </div>
+        <div class="filters">
+          <label><span>Search</span><input id="search" type="search" placeholder="⌕  Search courses..."></label>
+          <label><span>Category</span><select id="category"><option value="all">All</option><option>Multifaculty</option></select></label>
+          <label><span>Duration</span><select id="duration"><option value="all">All</option><option>Self Paced</option></select></label>
+          <label><span>Status</span><select id="status"><option value="upcoming">Upcoming (Enrollment Open)</option><option value="all">All</option></select></label>
+        </div>
+      </div>
+      <div class="catalog-area">
+        <article class="catalog-card" id="catalogCard">
+          <img class="catalog-art" src="assets/course-art.jpg" alt="Course illustration">
+          <div class="catalog-content">
+            <div class="course-title-row"><h2>Basic Course in Biomedical Research</h2><span class="institute-seal">✺</span></div>
+            <p class="course-type">Multifaculty</p>
+            <p class="provider">♧ &nbsp;ICMR - National Institute of Epidemiology</p>
+            <div class="dates-box"><strong>▦ &nbsp;Important Dates</strong><p>Self Paced</p></div>
+          </div>
+        </article>
+        <p id="empty" class="empty hidden">No courses match your search.</p>
+      </div>
+    </section>
+
+    <section id="mycoursesPage" class="page hidden">
+      <div class="government-bar">An initiative by Ministry of Education (Govt. of India)</div>
+      <div class="swayam-main-nav">
+        <img src="assets/swayam-logo.jpg" alt="SWAYAM">
+        <div>About Swayam &nbsp;|&nbsp; All Courses &nbsp;|&nbsp; National Coordinator &nbsp;|&nbsp; Local Chapters &nbsp;|&nbsp; FAQ &nbsp;|&nbsp; Swayam Plus &nbsp;|&nbsp; Archived Courses</div>
+        <span>Demo Student ⌄</span>
+      </div>
+      <div class="mycourses-heading"><span>Home / My Courses</span><button class="outline-button">Sync Courses</button></div>
+      <div class="course-tabs"><button class="selected">Upcoming/Ongoing</button><button>Completed/Closed</button></div>
+      <div class="mycourses-area">
+        <article class="my-course-card">
+          <img src="assets/course-art.jpg" alt="Modern Digital Communication course image">
+          <div class="my-course-body"><h2>Modern Digital Communication Techniques</h2><p>NPTEL</p>
+            <div class="course-actions"><button class="outline-button">Register For Certificate Exam</button><button class="solid-button" data-page="course">Go To Course</button></div>
+            <button class="outline-button full-button">If Already Registered, Click To Check Your Payment Status</button>
+            <p class="small-note">Exam registration end on 17 Aug 2026</p>
+          </div>
+        </article>
+      </div>
+      <footer class="official-footer"><div>Ministry of Education &nbsp;&nbsp; SWAYAM</div><div>DOWNLOAD APP &nbsp;&nbsp;&nbsp; FOLLOW US</div><div>Privacy Policy | Terms of Use | Honor Code <span>SWAYAM Helpline / Support</span></div><small>© 2026 SWAYAM. All rights reserved.</small></footer>
+    </section>
+
+    <section id="coursePage" class="page hidden">
+      <div class="course-toolbar">
+        <div class="course-logos"><img src="assets/swayam-logo.jpg" alt="SWAYAM"><span>◎ NPTEL</span></div>
+        <nav><button>About the course</button><button>Announcements</button><button>My Bookmarks</button><button>Q&amp;A</button><button class="accessibility">†</button><button class="profile">PR</button></nav>
+      </div>
+      <div class="course-workspace">
+        <aside class="outline-panel">
+          <div class="outline-head"><h1>Modern Digital Communication Techniques</h1><button type="button" class="progress-label progress-click" data-page="report" aria-label="Open student progress report"><span>Course Progress</span><strong>98.2% (11 of 13)</strong></button></div>
+          <div class="outline-scroll">
+            <details open><summary>About NPTEL</summary><button class="lesson selected" data-lesson="NPTEL initiative">◉ &nbsp;NPTEL initiative</button></details>
+            <details open><summary>How does an NPTEL online course work?</summary>
+              <button class="lesson" data-lesson="Welcome to NPTEL open online course">◉ &nbsp;Welcome to NPTEL open online course</button>
+              <button class="lesson" data-lesson="Information about the course and accessing the content">◉ &nbsp;Information about the course and accessing the content</button>
+              <button class="lesson" data-lesson="Announcement">◉ &nbsp;Announcement</button>
+              <button class="lesson" data-lesson="Discussion Forum: Do you have a doubt or question">◉ &nbsp;Discussion Forum: Do you have a doubt or question</button>
+              <button class="lesson" data-lesson="Know your scores in the Assignments">◉ &nbsp;Know your scores in the Assignments</button>
+              <button class="lesson" data-lesson="What you should know about the final certification exam">◉ &nbsp;What you should know about the final certification exam</button>
+              <button class="lesson" data-lesson="Certification criteria">◉ &nbsp;Certification criteria</button>
+              <button class="lesson" data-lesson="Best practices to maximize the learning from the online course">◉ &nbsp;Best practices to maximize the learning from the online course</button>
+              <button class="lesson" data-lesson="Guidelines and Timelines">◉ &nbsp;Guidelines and Timelines</button>
+              <button class="lesson" data-lesson="MCQ and MSQ Assignment">◉ &nbsp;MCQ and MSQ Assignment</button>
+              <button class="lesson" data-lesson="Numerical and Short Answer Assignment">◉ &nbsp;Numerical and Short Answer Assignment</button>
+            </details>
+            <details><summary>Week 01 — Introduction</summary><button class="lesson" data-lesson="Week 01: Introduction">◉ &nbsp;Week 01: Introduction</button><button class="lesson" data-lesson="Week 01: Assignment 01">◉ &nbsp;Week 01: Assignment 01</button></details>
+            <details><summary>Week 02 — Communication Systems</summary><button class="lesson" data-lesson="Week 02 lecture">◉ &nbsp;Week 02 lecture</button></details>
+          </div>
+        </aside>
+        <section class="lesson-view">
+          <div class="lesson-view-head"><span id="lessonBadge">Reading Material: NPTEL initiative</span><button aria-label="Bookmark">▮</button><button aria-label="Fullscreen">⛶</button></div>
+          <div class="lesson-copy"><p><a href="#" id="lessonLink">Click here</a> to view the NPTEL and its initiative</p></div>
+        </section>
+      </div>
+    </section>
+
+    <section id="reportPage" class="page hidden">
+      <div class="course-toolbar">
+        <div class="course-logos"><img src="assets/swayam-logo.jpg" alt="SWAYAM"><span>◎ NPTEL</span></div>
+        <nav><button data-page="course">About the course</button><button data-page="course">Announcements</button><button data-page="course">My Bookmarks</button><button data-page="course">Q&amp;A</button><button class="accessibility">†</button><button class="profile">PR</button></nav>
+      </div>
+      <div class="report-layout">
+        <aside class="student-panel">
+          <h1>Modern Digital Communication Techniques</h1>
+          <div class="progress-ring"><span>98.2%</span></div><p class="center">Course Progress</p>
+          <hr>
+          <div class="student-info"><span>Date Enrolled</span><strong>2026-07-27</strong><span>Email</span><strong>pranjal.rane1308@gmail.com</strong><span>Name</span><strong>Pranjal Mahendra Rane</strong></div>
+        </aside>
+        <section class="report-main">
+          <button class="back-course" data-page="course">‹ Back to Course Outline</button>
+          <h2>Student Progress Report</h2>
+          <details class="report-accordion" id="assignmentAccordion">
+            <summary>Assignment Scores</summary>
+            <div class="table-note">Note : Please scroll down to see all assignment scores</div>
+            <div class="score-scroll"><table><thead><tr><th>Title</th><th>Score</th></tr></thead><tbody id="scoreRows"></tbody></table></div>
+          </details>
+          <details class="report-accordion"><summary>Unit Wise Progress</summary><div class="report-content"><p>About NPTEL <strong>100%</strong></p><div class="bar"><span style="width:100%"></span></div><p>Course introduction <strong>98%</strong></p><div class="bar"><span style="width:98%"></span></div><p>Weekly course content <strong>95%</strong></p><div class="bar"><span style="width:95%"></span></div></div></details>
+          <details class="report-accordion"><summary>Grading and Certifications Policy</summary><div class="report-content">Course grading and certification information is shown here as demo content.</div></details>
+          <p class="report-note">Announcement: You are currently receiving course-related emails. <a href="#">Click here</a> to unsubscribe.</p>
+          <p class="report-note">Discussion Form:<br>If you want to unsubscribe from forum <a href="#">Click here</a>.</p>
+        </section>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
