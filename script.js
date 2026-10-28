@@ -8,13 +8,6 @@ const pages = {
 function showPage(name) {
   Object.entries(pages).forEach(([key, node]) => node.classList.toggle("hidden", key !== name));
   document.getElementById("profileMenu").classList.add("hidden");
-
-  // When Course Progress is clicked, open the report and expand Assignment Scores automatically.
-  if (name === "report") {
-    const assignmentAccordion = document.getElementById("assignmentAccordion");
-    if (assignmentAccordion) assignmentAccordion.open = true;
-  }
-
   window.scrollTo({ top: 0, behavior: "smooth" });
 }
 
@@ -71,11 +64,11 @@ const scores = [
   ["Week 05 : Assignment 05", "90"],
   ["Week 06 : Assignment 06", "60"],
   ["Week 07 : Assignment 07", "100"],
-  ["Week 08 : Assignment 08", "100"],
+  ["Week 08 : Assignment 08", "93"],
   ["Week 09 : Assignment 09", "100"],
-  ["Week 10 : Assignment 10", "100"],
-  ["Week 11 : Assignment 11", "100"],
-  ["Week 12 : Assignment 12", "100"]
+  ["Week 10 : Assignment 10", "67"],
+  ["Week 11 : Assignment 11", "93"],
+  ["Week 12 : Assignment 12", "-"]
 ];
 const tbody = document.getElementById("scoreRows");
 scores.forEach(([title, score]) => {
